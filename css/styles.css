@@ -71,6 +71,8 @@ nav a {
     color: black;
 }
 
+/* Footer */
+
 .footer-nav {
     display: none;
 }
@@ -94,13 +96,9 @@ footer {
     color: black;
 }
 
-
-
-
 .student-name {
     font-size: 12px;
 }
-
 
 /* Contact info */
 
@@ -134,7 +132,6 @@ Media Queries
 ==========================================================================
 */
 
-
 /* 768px+ Wide Screens */
 
 @media screen and (min-width: 768px) {
@@ -145,6 +142,7 @@ Media Queries
         margin-right: -0.5rem;
         padding: 1rem;
     }
+
     .wrapper {
         display: flex;
         flex-wrap: nowrap;
@@ -155,16 +153,20 @@ Media Queries
         align-content: center;
         text-align: left;
     }
+
     .wrapper img {
         padding: inherit;
     }
+
     .portfolio {
         display: flex;
         flex-wrap: wrap;
     }
+
     .portfolio-item {
         flex: 50%;
     }
+
     .contact {
         background: #f0f0f0;
         margin-left: -0.5rem;
@@ -172,16 +174,18 @@ Media Queries
         padding-left: 15px;
         border-bottom: lightgray solid 0.5px;
     }
-    /* Navigation */
+
     nav li {
         display: inline-flex;
         background: #f0f0f0;
     }
+
     .footer {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .footer-nav,
     .student-name {
         display: flex;
@@ -189,12 +193,14 @@ Media Queries
         gap: 15px;
         font-size: 12px;
     }
+
     .footer-nav a {
         display: block;
         text-decoration: none;
         color: black;
         text-transform: uppercase;
     }
+
     .back-to-top {
         display: none;
     }
@@ -218,8 +224,6 @@ Media Queries
         display: flex;
         text-align: left;
     }
-
-   
 
     .portfolio-item {
         flex: 33%;
