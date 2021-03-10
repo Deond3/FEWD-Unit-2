@@ -91,11 +91,10 @@ footer {
     text-transform: uppercase;
     font-size: 12px;
     text-decoration: none;
+    color: black;
 }
 
-.back-to-top a:link {
-    text-decoration: none;
-  }
+
 
 
 .student-name {
