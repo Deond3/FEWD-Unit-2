@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #3b3b3b;
+    background: #f8f8f8ee;
+    padding: 0px 0.5rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    padding: 2rem 0 2rem 0;
+}
+
+img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+header {
+    display: inline-block;
+    background: #f0f0f0;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+.wrapper img {
+    padding: 2rem;
+}
+
+.portfolio {
+        padding-bottom: 2rem;
+}
+
+/* Navigation */
+
+nav li {
+    padding: 15px;
+    list-style: none;
+    background-color: white;
+    margin: 7px 7px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+.back-to-top {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.back-to-top a:link {
+    text-decoration: none;
+  }
+
+
+.student-name {
+    font-size: 12px;
+}
+
+
+/* Contact info */
+
+.contact {
+    background: #f0f0f0;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2rem;
+    border-bottom: lightgray solid 0.5px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+.contact p {
+    color: #7f7f7f;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/* 
+========================================================================== 
+Media Queries 
+==========================================================================
+*/
+
+
+/* 768px+ Wide Screens */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: inline-block;
+        background: #f0f0f0;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        padding: 1rem;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: inherit;
+        align-content: center;
+        text-align: left;
+    }
+    .wrapper img {
+        padding: inherit;
+    }
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-item {
+        flex: 50%;
+    }
+    .contact {
+        background: #f0f0f0;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        padding-left: 15px;
+        border-bottom: lightgray solid 0.5px;
+    }
+    /* Navigation */
+    nav li {
+        display: inline-flex;
+        background: #f0f0f0;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-nav,
+    .student-name {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .footer-nav a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
+    .back-to-top {
+        display: none;
+    }
+}
+
+/* 1024px+ Wide Screens */
+
+@media screen and (min-width: 1024px) {
+    .flex-header {
+        display: inline-flex;
+        justify-content:space-between;
+        width: 100%;
+    }
+    
+    .header-name {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        display: flex;
+        text-align: left;
+    }
+
+   
+
+    .portfolio-item {
+        flex: 33%;
+    }
+
+    .contact {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
